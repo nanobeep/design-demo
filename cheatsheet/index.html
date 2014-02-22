@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-FRAME-Options" content="SameOrigin">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script src="../assets/javascript/jquery.masonry.min.js"></script>
+
   <script src="../assets/javascript/scripts.min.js"></script>
 </head>
 
@@ -217,14 +217,6 @@
 
 <script>
   $(function(){
-    var $container = $('.cheatsheet');
-    if($(window).width() > 640) {
-      $container.imagesLoaded(function(){
-        $container.masonry({
-          itemSelector : 'article'
-        });
-      });
-    }
     $("figure").on("click", function() { $(this).find("video")[0].play() });
     $("video").on("play", function() { $(this).closest("figure").addClass("playing") });
     $("video").on("ended", function() { $(this).closest("figure").removeClass("playing") });
