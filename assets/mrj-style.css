@@ -1,0 +1,19 @@
+@media only screen and (min-width: 641px) {
+
+  .cheatsheet article {
+    width: 100%;
+  }
+  
+  .cheatsheet figure {
+    width: 70%;
+    float: left;
+    padding: 0 0 39.35% 0;
+  }
+  
+  .cheatsheet p {
+    width: 27%;
+    float: right;
+    margin-top: 15px;
+  }
+  
+}
